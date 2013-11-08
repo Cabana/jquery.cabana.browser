@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jquery.cabana.browser - basic example</title>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="../cabana.browser.js"></script>
+
+    <script>
+
+        $.Cabana.browser.addHTMLClasses();
+
+        $(document).ready(function () {
+
+            $('p').html($.Cabana.browser.check());
+
+        });
+
+    </script>
+</head>
+<body>
+
+    <h1>Inspect the root html element for the classes added</h1>
+    <h2>Browser check</h2>
+    <p></p>
+
+</body>
+</html>
