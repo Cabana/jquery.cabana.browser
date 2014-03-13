@@ -102,6 +102,16 @@
         } else {
             $('html').addClass("no-opera");
         }
+        if (navigator.userAgent.indexOf("MSIE") !== -1) {
+          $('html').addClass("msie");
+          if (navigator.userAgent.indexOf("MSIE 9.0") !== -1) {
+              $('html').addClass("msie-9");
+          } else if (navigator.userAgent.indexOf("MSIE 8.0") !== -1) {
+              $('html').addClass("msie-8");
+          }
+        } else {
+          $('html').addClass("no-msie");
+        }
 
     };
 
