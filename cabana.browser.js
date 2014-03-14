@@ -97,7 +97,7 @@
         } else {
             $('html').addClass("no-ios");
         }
-        if (navigator.userAgent.indexOf("Opera") !== -1) {
+        if (navigator.userAgent.indexOf("Opera") !== -1 || navigator.userAgent.indexOf("OPR") !== -1) {
             $('html').addClass("opera");
         } else {
             $('html').addClass("no-opera");
